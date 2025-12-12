@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 메인 컨테이너 */
+.history-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 탭 버튼 영역 */
+.history-tabs {
+    display: flex;
+    gap: 12px;
+}
+
+/* 버튼 스타일 (탭 모양) */
+.tab-btn {
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: 1px solid #d0d4d8;
+    background-color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.tab-btn:hover {
+    background-color: #f3f4f7;
+}
+
+/* 아래 내용 박스 */
+.panel {
+    background-color: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e3e6ea;
+
+    padding: 20px;
+
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.04),
+        0 8px 20px rgba(0,0,0,0.06);
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 주문내역 리스트 박스 */
+.history-box {
+    min-height: 350px;
+    display: flex;
+    align-items: flex-start;
+}

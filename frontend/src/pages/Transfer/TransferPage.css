@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 전체 레이아웃 */
+.transfer-container {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 24px;
+}
+
+/* 왼쪽 영역 */
+.transfer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 공통 패널 */
+.panel {
+    background-color: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e3e6ea;
+
+    padding: 20px;
+
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.04),
+        0 8px 20px rgba(0,0,0,0.06);
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 자산현황 박스 */
+.asset-panel {
+    height: 120px;
+    font-size: 20px;
+}
+
+/* 라벨 */
+.transfer-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* 입력창 */
+.transfer-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfd4d8;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.transfer-input:focus {
+    border-color: #2f74ff;
+    outline: none;
+}
+
+/* 인증번호 input + 버튼 가로 배치 */
+.transfer-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 기본 버튼 */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+
+    background-color: #2f74ff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1f5fe4;
+}
+
+.btn-secondary {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #cfd4d8;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #f2f4f7;
+}
+
+/* 이체 버튼 특별 스타일 */
+.submit-btn {
+    margin-top: 10px;
+}
+
+/* 오른쪽 이체내역 */
+.transfer-right {
+    display: flex;
+}
+
+.history-panel {
+    width: 100%;
+    height: 600px;
+    font-size: 18px;
+}

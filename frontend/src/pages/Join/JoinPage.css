@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+.signup-container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6fa;
+}
+
+/* 제목 */
+.signup-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* 폼 레이아웃 */
+.signup-form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* 라벨 */
+.signup-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 입력창 */
+.signup-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfd4d8;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* 이메일 + 버튼을 가로 정렬하는 Row */
+.email-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 인증요청 버튼 */
+.email-send-btn {
+    flex-shrink: 0;
+    padding: 10px 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2f74ff;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.email-send-btn:hover {
+    background-color: #1f5fe4;
+}
+
+/* 인증확인 버튼 */
+.email-check-btn {
+    flex-shrink: 0;
+    padding: 10px 14px;
+
+    border: 1px solid #cfd4d8;
+    border-radius: 8px;
+
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.email-check-btn:hover {
+    background-color: #f2f4f7;
+}
+
+/* 가입 버튼 */
+.signup-btn-primary {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2f74ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.signup-btn-primary:hover {
+    background-color: #1f5fe4;
+}
+
+/* 로그인 이동 버튼 */
+.signup-btn-secondary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cfd4d8;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.signup-btn-secondary:hover {
+    background-color: #f2f4f7;
+}

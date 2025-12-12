@@ -6,13 +6,13 @@ function Header() {
     return (
         <header className="header">
             <div className="header-left">
-                <Link to="/main" className="menu-item">메인페이지</Link>
+                <Link to="/" className="menu-item">모의투자플랫폼</Link>
             </div>
 
             <nav className="header-center">
-                <Link to="/search" className="menu-button">종목 검색</Link>
-                <Link to="/order" className="menu-button">주문</Link>
-                <Link to="/transfer" className="menu-button">이체</Link>
+                <Link to="/coins" className="menu-item">종목 검색</Link>
+                <Link to="/order" className="menu-item">주문</Link>
+                <Link to="/transfer" className="menu-item">이체</Link>
             </nav>
 
             <div className="header-right">

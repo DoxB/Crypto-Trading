@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 전체 그리드 */
+.order-container {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.3fr;
+    gap: 24px;
+}
+
+/* 패널 기본 스타일 */
+.panel {
+    background-color: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e3e6ea;
+
+    padding: 20px;
+
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.04),
+        0 8px 20px rgba(0,0,0,0.06);
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 좌측 패널 */
+.interest-panel {
+    height: 650px;
+}
+
+/* 중앙 상단: 종목정보 + 수량 */
+.center-top {
+    height: 70px;
+}
+
+.info-grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* 차트 영역 */
+.chart-panel {
+    height: 380px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* 포지션 영역 */
+.position-panel {
+    height: 200px;
+}
+
+/* 우측 주문창 */
+.order-panel {
+    height: 650px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1000px) {
+    .order-container {
+        grid-template-columns: 1fr;
+    }
+    .interest-panel,
+    .order-panel {
+        height: auto;
+    }
+}
